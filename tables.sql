@@ -82,7 +82,7 @@ VALUES (1, 1),
 (10, 19),
 (10, 20);
 
-/* 5.) 
+/* 5.) */
 
 SELECT A.title AS "Albums",
       T.title AS "Tracks"
@@ -92,9 +92,9 @@ FROM albums AS A
 INNER JOIN albums_tracks AS A_T
 ON A.album_id = A_T.album_id
 INNER JOIN tracks AS T
-ON A_T.track_id = T.track_id;*/
+ON A_T.track_id = T.track_id;
 
-/* 6.) 
+/* 6.) */
 
 SELECT T.title AS "Tracks",
       A.title AS "Albums"
@@ -104,9 +104,9 @@ FROM tracks AS T
 INNER JOIN albums_tracks AS A_T
 ON T.track_id = A_T.track_id
 INNER JOIN albums AS A
-ON A_T.album_id = A.album_id; */
+ON A_T.album_id = A.album_id; 
 
-/* 7.) 
+/* 7.) */
 
 SELECT A.album_id,
       A.title,
@@ -121,8 +121,7 @@ ON A_T.track_id = T.track_id
 
 
 GROUP BY A.album_id, A.title
-ORDER BY A.album_id ASC; */
-
+ORDER BY A.album_id ASC; 
 /* 8.) */
 
 SELECT T.track_id,
